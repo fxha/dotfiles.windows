@@ -37,9 +37,9 @@ Set-PSReadlineKeyHandler -Chord 'Shift+Tab' -Function Complete
 # Git
 #
 
-$env:GIT_SSH="C:/Windows/System32/OpenSSH/ssh.exe"
-Set-Alias ssh-agent "C:/Windows/System32/OpenSSH/ssh.exe"
-Set-Alias ssh-add "C:/Windows/System32/OpenSSH/ssh.exe"
+$env:GIT_SSH="C:\Windows\System32\OpenSSH\ssh.exe"
+Set-Alias ssh-agent "C:\Windows\System32\OpenSSH\ssh.exe"
+Set-Alias ssh-add "C:\Windows\System32\OpenSSH\ssh.exe"
 
 Start-SshAgent -Quiet
 
