@@ -16,6 +16,7 @@ Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineOption -HistorySaveStyle SaveIncrementally
 Set-PSReadLineOption -MaximumHistoryCount 2000
 Set-PSReadlineOption -BellStyle Visual
+Set-PSReadLineOption -PredictionSource None
 
 # History substring search
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
@@ -24,7 +25,6 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 # Tab completion
 Set-PSReadlineKeyHandler -Chord Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Chord 'Shift+Tab' -Function Complete
-
 
 #######################################
 # Environment
